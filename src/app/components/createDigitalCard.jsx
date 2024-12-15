@@ -23,6 +23,9 @@ export default function CreateDigitalCard() {
               Create your Profile
             </button>
           </div>
+          <div className="flex justify-end w-[70%]">
+            <img src="../img/arrow-2.svg" alt="" />
+          </div>
         </div>
         <div className="mt-16 pt-16 flex justify-center sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow md:w-[50%] absolute right-0 top-[-111px]">
           <img
