@@ -29,8 +29,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="bg-[#f3faf7] pt-12 pb-12 lg:pb-32">
-      <div className="mx-auto bg-[#F3FAF7] mt-4 max-w-7xl px-4 sm:px-6 flex-col lg:flex lg:items-center lg:gap-x-16 lg:px-8">
+    <div className="bg-[#f3faf7] pt-12 pb-12 md:pb-32">
+      <div className="mx-auto bg-[#F3FAF7] mt-4 max-w-7xl px-4 sm:px-6 flex-col md:flex md:items-center md:gap-x-16 md:px-8">
         <h1 className="mt-10 text-pretty text-2xl text-center  leading-8 font-semibold text-[#2C2C2C] sm:text-4xl">
           Our Happy Clients Says <br /> About Us
         </h1>
@@ -39,11 +39,11 @@ const Testimonials = () => {
           luctus urna vitae <br /> non. Duis ultrices felis cras penatibus vel
           aliquam. Odio in
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-[#053E42] lg:w-[22rem] rounded-lg shadow-lg p-6 flex flex-col"
+              className="bg-[#053E42] md:w-[22rem] rounded-lg shadow-lg p-6 flex flex-col"
             >
               <div className="flex items-center gap-2">
                 <img

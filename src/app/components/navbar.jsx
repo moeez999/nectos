@@ -21,24 +21,24 @@ export default function Navbar() {
 
   return (
     <Disclosure as="nav">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         <div className="flex h-16 justify-between items-center">
           {/* Logo on the left */}
           <div className="flex-shrink-0">
             <img
               alt="Nectos"
               src="../img/Nectos-Logo.svg"
-              className="h-8 lg:h-12 w-auto"
+              className="h-8 md:h-12 w-auto"
             />
           </div>
 
           {/* Centered Navigation Items */}
-          <div className="hidden lg:flex-1 lg:flex lg:justify-center space-x-8">
+          <div className="hidden lg:flex-1 lg:flex md:justify-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 lg:text-base font-medium text-[#242424] hover:text-[#1DD588]"
+                className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 md:text-base font-medium text-[#242424] hover:text-[#1DD588]"
               >
                 {item.name}
               </a>

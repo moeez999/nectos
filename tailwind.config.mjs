@@ -13,6 +13,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        "2xl": "1439px",
+        "3xl": "1536px",
+      },
     },
   },
   plugins: [],

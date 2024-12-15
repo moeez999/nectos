@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <footer className="flex-col px-4 lg:px-0 lg:flex lg:items-center lg:gap-x-10 bg-[#142027] py-12">
+    <footer className="flex-col px-4 md:px-0 md:flex md:items-center md:gap-x-10 bg-[#142027] py-12">
       <div className="mx-auto max-w-7xl">
         {/* Left Section */}
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
-          <div className="lg:w-[40%]">
-            <div className="flex w-48 lg:w-full items-center space-x-2 mb-4 ">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
+          <div className="md:w-[40%]">
+            <div className="flex w-48 md:w-full items-center space-x-2 mb-4 ">
               {/* Logo */}
               <img src="../img/nectoslog-footer.svg" alt="Nectos Logo" />
             </div>
@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
           </div>
           {/* Center Section: Quick Links */}
-          <div className="lg:w-[30%] flex flex-col items-center  justify-center">
+          <div className="md:w-[30%] flex flex-col items-center  justify-center">
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -71,7 +71,7 @@ export default function Footer() {
             </ul>
           </div>
           {/* Right Section: Resources */}
-          <div className="lg:w-[30%] flex flex-col lg:justify-center">
+          <div className="md:w-[30%] flex flex-col md:justify-center">
             <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
