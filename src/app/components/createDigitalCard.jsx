@@ -18,7 +18,7 @@ export default function CreateDigitalCard() {
           <div className="mt-10 flex items-center justify-center sm:justify-start gap-x-6">
             <button
               type="button"
-              className="relative rounded-full bg-[#053E42] text-white px-6 py-3 text-basefont-medium"
+              className="relative rounded-full text-[#053E42] bg-[#1DD588] font-medim px-6 py-3 text-basefont-medium"
             >
               Create your Profile
             </button>
