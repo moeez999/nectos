@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const faqs = [
   {
@@ -31,8 +31,10 @@ const faqs = [
 ];
 
 export default function Faqs() {
-  const [openIndex, setOpenIndex] = useState(1);
-
+  const [openIndex, setOpenIndex] = useState(null);
+  useEffect(() => {
+    setOpenIndex(1); // Open the second FAQ by default
+  }, []);
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
