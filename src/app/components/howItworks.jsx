@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HowItworks() {
   return (
-    <div>
+    <div id="howitworks">
       <div className="mx-auto mt-16 max-w-7xl px-4 sm:px-6  md:flex md:items-center md:gap-x-16 md:px-8 mb-12">
         <div>
           <img src="../img/howitworks.png" alt="" />

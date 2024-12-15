@@ -40,7 +40,10 @@ export default function Faqs() {
   };
 
   return (
-    <div className="mx-auto  my-20 max-w-7xl px-4 sm:px-6 flex-col md:flex md:items-center md:gap-x-16 md:px-8">
+    <div
+      id="faqs"
+      className="mx-auto  my-20 max-w-7xl px-4 sm:px-6 flex-col md:flex md:items-center md:gap-x-16 md:px-8"
+    >
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left Column: FAQ Title & Intro */}
         <div className="space-y-6">

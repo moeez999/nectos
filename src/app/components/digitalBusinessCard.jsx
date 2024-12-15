@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 
 export default function DigitalBusinessCard() {
   return (
-    <div className="business-card-section">
+    <div id="digitalbusinesscard" className="business-card-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6  md:flex md:items-center md:gap-x-10 md:px-8">
         <div className="mx-auto max-w-2xl md:mx-0 md:flex-auto md:w-[50%]">
           <h1 className="mt-10 text-pretty text-2xl text-center sm:text-start leading-8 font-semibold text-[#04091E] sm:text-4xl">

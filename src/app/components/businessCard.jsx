@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 
 export default function BusinessCard() {
   return (
-    <div className="business-card-section my-16">
+    <div id="businesscard" className="business-card-section my-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6  md:flex md:items-center md:gap-x-10 md:px-8">
         <div className="mt-16 flex justify-center sm:mt-24 md:mt-0 md:shrink-0 md:grow md:w-[50%]">
           <img

@@ -3,7 +3,7 @@ import Navbar from "./navbar";
 
 export default function HeroSection() {
   return (
-    <div className="hero-section">
+    <div id="hero" className="hero-section">
       <div className="pt-4">
         <Navbar />
       </div>

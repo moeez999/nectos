@@ -12,11 +12,11 @@ import { BellIcon } from "@heroicons/react/24/outline";
 export default function Navbar() {
   // Dynamic navigation items array
   const navItems = [
-    { name: "Home", href: "#" },
-    { name: "How it works?", href: "#" },
-    { name: "Features", href: "#" },
-    { name: "FAQ’S", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Home", href: "#hero" },
+    { name: "How it works?", href: "#howitworks" },
+    { name: "Features", href: "#features" },
+    { name: "FAQ’S", href: "#faqs" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (

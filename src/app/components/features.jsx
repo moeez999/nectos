@@ -29,7 +29,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-[#f3faf7] pt-12 pb-32">
+    <div id="features" className="bg-[#f3faf7] pt-12 pb-32">
       <div className="mx-auto bg-[#F3FAF7] mt-16 max-w-7xl px-4 sm:px-6 flex-col md:flex md:items-center md:gap-x-16 md:px-8">
         <h1 className="mt-10 text-pretty text-2xl text-center leading-8 font-semibold text-[#2C2C2C] sm:text-4xl">
           Some of our Features
