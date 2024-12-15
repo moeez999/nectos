@@ -2,12 +2,7 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
 } from "@headlessui/react";
-import { BellIcon } from "@heroicons/react/24/outline";
 
 export default function Navbar() {
   // Dynamic navigation items array
