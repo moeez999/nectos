@@ -5,7 +5,7 @@ export default function DigitalBusinessCard() {
   return (
     <div className="business-card-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6  lg:flex lg:items-center lg:gap-x-10 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto md:w-[50%]">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto lg:w-[50%]">
           <h1 className="mt-10 text-pretty text-2xl text-center sm:text-start leading-8 font-semibold text-[#04091E] sm:text-4xl">
             Growth Networking with Our Digital Business Card
           </h1>
@@ -27,7 +27,7 @@ export default function DigitalBusinessCard() {
             </button>
           </div>
         </div>
-        <div className="mt-16 pt-16 flex justify-center sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow md:w-[50%]">
+        <div className="mt-16 pt-16 flex justify-center sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow lg:w-[50%]">
           <img
             className="lg:w-[90%] h-auto"
             src="../img/digitalbusinesscard.png"

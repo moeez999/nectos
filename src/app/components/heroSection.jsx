@@ -9,10 +9,10 @@ export default function HeroSection() {
       </div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6  lg:flex lg:items-center lg:gap-x-10 lg:px-8 relative">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-          <div className="absolute top-[-20px] left-[8px]">
+          <div className="block lg:hidden absolute top-[-20px] left-[8px]">
             <img src="../img/plus.svg" alt="" />
           </div>
-          <h1 className="mt-10 text-pretty text-2xl text-center sm:text-start leading-8 font-semibold text-[#04091E] sm:text-4xl">
+          <h1 className="mt-10 text-pretty text-2xl text-center lg:text-start leading-8 font-semibold text-[#04091E] sm:text-4xl">
             Digital Business Cards for Modern Networking
           </h1>
           <p className="mt-8 text-pretty text-sm text-center sm:text-start  font-medium text-[#3C3C3C] sm:text-xl/8">
@@ -28,10 +28,10 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="md:hidden mt-16 flex justify-center sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
+        <div className="lg:hidden mt-16 flex justify-center sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
           <img className="lg:w-[90%] h-auto" src="../img/hero-2.png" alt="" />
         </div>
-        <div className="mt-16 hidden md:flex justify-center sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
+        <div className="mt-16 hidden lg:flex justify-center sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
           <img className="lg:w-[90%] h-auto" src="../img/girl.png" alt="" />
         </div>
       </div>

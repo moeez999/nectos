@@ -43,12 +43,12 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="md:w-[15rem] bg-white rounded-lg shadow-md p-3 md:p-6  hover:shadow-lg transition-shadow"
+              className="lg:w-[15rem] bg-white rounded-lg shadow-md p-3 lg:p-6  hover:shadow-lg transition-shadow"
             >
               <div className="bg-[#1DD588] bg-opacity-5 text-4xl mb-4 w-fit p-3 rounded-md">
                 <img src={feature.icon} alt="" />
               </div>
-              <h3 className="text-sm md:text-lg font-semibold text-[#333C46] mb-2">
+              <h3 className="text-sm lg:text-lg font-semibold text-[#333C46] mb-2">
                 {feature.title}
               </h3>
               <p className="text-[#353535] text-xs lg:text-base">
