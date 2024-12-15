@@ -29,9 +29,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="bg-[#f3faf7] pt-12 pb-32">
+    <div className="bg-[#f3faf7] pt-12 pb-12 md:pb-32">
       <div className="mx-auto bg-[#F3FAF7] mt-4 max-w-7xl px-4 sm:px-6 flex-col lg:flex lg:items-center lg:gap-x-16 lg:px-8">
-        <h1 className="mt-10 text-pretty text-xl text-center  leading-8 font-semibold text-[#2C2C2C] sm:text-4xl">
+        <h1 className="mt-10 text-pretty text-2xl text-center  leading-8 font-semibold text-[#2C2C2C] sm:text-4xl">
           Our Happy Clients Says <br /> About Us
         </h1>
         <p className="text-[#353535] mb-12  text-center pt-4 pb-8">

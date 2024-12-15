@@ -7,16 +7,22 @@
 body {
   font-family: "Poppins";
 }
-
-.hero-section {
-  background-image: url("../../public/img/hero.png");
-  background-size: cover;
-  background-position: center;
+@media (min-width: 641px) {
+  .hero-section {
+    background-image: url("../../public/img/hero.png");
+    background-size: cover;
+    background-position: center;
+  }
 }
-
 .create-business-card-section {
   background-image: url("../../public/img/bg-two.png");
   background-size: cover;
   background-position: center;
   background-position: 10%;
+}
+
+@media (max-width: 641px) {
+  .hero-section {
+    background-color: #c4f4e0;
+  }
 }

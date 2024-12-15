@@ -6,7 +6,7 @@ export default function DigitalBusinessCard() {
     <div className="business-card-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6  lg:flex lg:items-center lg:gap-x-10 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto md:w-[50%]">
-          <h1 className="mt-10 text-pretty text-xl text-center sm:text-start leading-8 font-semibold text-[#04091E] sm:text-4xl">
+          <h1 className="mt-10 text-pretty text-2xl text-center sm:text-start leading-8 font-semibold text-[#04091E] sm:text-4xl">
             Growth Networking with Our Digital Business Card
           </h1>
           <p className="mt-8 text-pretty text-sm text-center sm:text-start  font-medium text-[#3C3C3C] sm:text-xl/8">

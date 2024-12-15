@@ -58,10 +58,8 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="lg:hidden">
             <DisclosureButton className="text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#1DD588]">
-              <span className="sr-only">Open menu</span>
-              {/* You can use a hamburger icon here */}
               <svg
-                className="h-6 w-6"
+                className="h-6 w-6 text-[#053E42]"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

@@ -63,17 +63,17 @@ export default function Faqs() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`border-[#202020] border-2 rounded-md cursor-pointer transition-all duration-300 ${
+              className={`border-[#202020] border-2 rounded-2xl md:rounded-lg cursor-pointer transition-all duration-300 ${
                 openIndex === index ? "bg-green-100" : "bg-white"
               }`}
               onClick={() => toggleFAQ(index)}
             >
               <div className="p-4 flex justify-between items-center">
-                <h3 className="font-semibold text-[#202020] text-lg">
+                <h3 className="font-semibold text-[#202020] md:text-lg">
                   {faq.question}
                 </h3>
                 <span className="">
-                  <img src="../img/chevronright.svg" alt="" />
+                  <img className="w-8" src="../img/chevronright.svg" alt="" />
                 </span>
               </div>
               {openIndex === index && faq.answer && (
