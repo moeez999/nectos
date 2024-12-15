@@ -39,19 +39,21 @@ const Features = () => {
           luctus urna vitae <br /> non. Duis ultrices felis cras penatibus vel
           aliquam. Odio in
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="w-[15rem] bg-white rounded-lg shadow-md p-6  hover:shadow-lg transition-shadow"
+              className="md:w-[15rem] bg-white rounded-lg shadow-md p-3 md:p-6  hover:shadow-lg transition-shadow"
             >
               <div className="bg-[#1DD588] bg-opacity-5 text-4xl mb-4 w-fit p-3 rounded-md">
                 <img src={feature.icon} alt="" />
               </div>
-              <h3 className="text-lg font-semibold text-[#333C46] mb-2">
+              <h3 className="text-sm md:text-lg font-semibold text-[#333C46] mb-2">
                 {feature.title}
               </h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-[#353535] text-xs lg:text-base">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
