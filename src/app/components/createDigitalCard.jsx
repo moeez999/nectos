@@ -5,7 +5,7 @@ export default function CreateDigitalCard() {
   return (
     <div className="create-business-card-section py-16 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6  lg:flex lg:items-center lg:gap-x-10 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto md:w-[50%]">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto md:w-[50%] relative">
           <h1 className="mt-10 text-pretty text-xl text-center sm:text-start leading-8 font-semibold text-[#04091E] sm:text-4xl">
             Create your digital business card today.
           </h1>
@@ -23,7 +23,7 @@ export default function CreateDigitalCard() {
               Create your Profile
             </button>
           </div>
-          <div className="flex justify-end w-[70%]">
+          <div className="absolute right-40 ">
             <img src="../img/arrow-2.svg" alt="" />
           </div>
         </div>
