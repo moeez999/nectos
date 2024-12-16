@@ -17,6 +17,7 @@ import {
   UsersIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import ProfileForm from "./profileForm";
 
 const navigation = [
   { name: "Profile", href: "/dashboard", icon: HomeIcon, current: true },
@@ -35,7 +36,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Support() {
+export default function Settings() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -164,11 +165,11 @@ export default function Support() {
         </div>
 
         <div className="lg:pl-72">
-          <div className="sticky bg-white top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
+          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
             <button
               type="button"
               onClick={() => setSidebarOpen(true)}
-              className="-m-2.5 p-2.5 text-[#1B1E28] lg:hidden bg-[#F7F7F9] rounded-[12px]"
+              className="-m-2.5 p-2.5 text-gray-700 lg:hidden bg-[#F7F7F9] rounded-[12px]"
             >
               <span className="sr-only">Open sidebar</span>
               <svg
@@ -210,7 +211,7 @@ export default function Support() {
             </button>
 
             <div className="flex flex-1 justify-center md:justify-between items-center gap-x-4 self-stretch lg:gap-x-6">
-              <h2 className="text-[#1B1E28] font-medium text-xl">Support</h2>
+              <h2 className="text-[#1B1E28] font-medium text-xl">Profile</h2>
               <div className="flex items-center gap-x-4 lg:gap-x-6">
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative hidden md:block">
@@ -236,54 +237,7 @@ export default function Support() {
           </div>
 
           <main className="py-10">
-            <div className="px-4 sm:px-6 lg:px-8 flex justify-center items-center h-full flex-col gap-8">
-              <div className="flex justify-center">
-                <img
-                  className="w-[90%] md:w-full"
-                  src="../img/support.png"
-                  alt=""
-                />
-              </div>
-              <h1 className="text-[#1B1E28] font-semibold md:text-2xl text-center">
-                Hello, How Can We Help you?
-              </h1>
-            </div>
-            <div className="flex justify-center items-center flex-col px-4 md:flex-row md:gap-8">
-              <div className="max-w-sm  mt-8 p-4  rounded-lg bg-[#D2FAE9]">
-                <div className="flex items-center justify-between border-b border-[#D9D9D9] pb-4">
-                  <div className="flex items-center">
-                    <span className="inline-block ">
-                      <img src="../img/customersupport.svg" alt="" />
-                    </span>
-                    <h2 className="ml-4 text-lg  text-[#1B1E28]">
-                      Customer Support
-                    </h2>
-                  </div>
-                  <img src="../img/chevron-2.svg" alt="" />
-                </div>
-                <p className="mt-2 text-[#545454] text-sm pt-2">
-                  Lorem ipsum dolor sit amet consectetur. Nulla ultricies lacus
-                  gravida fermentum sit. Venenatis amet nunc placerat lacus et
-                  turpis eget. Velit.
-                </p>
-              </div>{" "}
-              <div className="max-w-sm  mt-8 p-4  rounded-lg bg-[#D2FAE9]">
-                <div className="flex items-center justify-between border-b border-[#D9D9D9] pb-4">
-                  <div className="flex items-center">
-                    <span className="inline-block ">
-                      <img src="../img/faq-2.svg" alt="" />
-                    </span>
-                    <h2 className="ml-4 text-lg  text-[#1B1E28]">FAQ’s</h2>
-                  </div>
-                  <img src="../img/chevron-2.svg" alt="" />
-                </div>
-                <p className="mt-2 text-[#545454] text-sm pt-2">
-                  Lorem ipsum dolor sit amet consectetur. Nulla ultricies lacus
-                  gravida fermentum sit. Venenatis amet nunc placerat lacus et
-                  turpis eget. Velit.
-                </p>
-              </div>
-            </div>
+            <ProfileForm />
           </main>
         </div>
       </div>
