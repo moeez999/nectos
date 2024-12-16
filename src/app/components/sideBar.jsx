@@ -249,20 +249,24 @@ export default function SideBar() {
               <h1 className="text-[#1B1E28] font-semibold md:text-2xl text-center">
                 Welcome to your <br /> Profile!
               </h1>
-              <div className="relative">
-                <img src="../img/welcome.png" alt="" />
+              <div className="relative flex justify-center items-center">
                 <img
-                  className="absolute bottom-[-5%] left-[-40%]"
+                  className="w-[90%] md:w-full"
+                  src="../img/welcome.png"
+                  alt=""
+                />
+                <img
+                  className="w-12 absolute bottom-[-20%] left-[-4%] md:bottom-[-5%] md:left-[-40%]"
                   src="../img/arrowcurly.png"
                   alt=""
                 />
                 <img
-                  className="absolute top-0 right-[-30%]"
+                  className="w-12 absolute top-0 right-[-5%] md:right-[-30%]"
                   src="../img/yellowmark.png"
                   alt=""
                 />
                 <img
-                  className="absolute top-[-5%] left-[-30%]"
+                  className="w-12 absolute top-[-5%] left-0 md:left-[-30%]"
                   src="../img/dots.png"
                   alt=""
                 />
