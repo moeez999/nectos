@@ -275,7 +275,7 @@ export default function SideBar() {
             <div className="flex justify-center">
               <a
                 href="#"
-                className="bg-[#053E42] text-white rounded-[12px] px-8 py-3 mt-10"
+                className="bg-[#053E42] text-white rounded-full md:rounded-[12px] px-8 py-3 mt-10"
               >
                 Create a card
               </a>
