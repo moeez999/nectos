@@ -256,17 +256,17 @@ export default function SideBar() {
                   alt=""
                 />
                 <img
-                  className="w-12 absolute bottom-[-20%] left-[-4%] md:bottom-[-5%] md:left-[-40%]"
+                  className="w-12 md:w-auto absolute bottom-[-20%] left-[-4%] md:bottom-[-5%] md:left-[-40%]"
                   src="../img/arrowcurly.png"
                   alt=""
                 />
                 <img
-                  className="w-12 absolute top-0 right-[-5%] md:right-[-30%]"
+                  className="w-12 md:w-auto absolute top-0 right-[-2%] md:right-[-30%]"
                   src="../img/yellowmark.png"
                   alt=""
                 />
                 <img
-                  className="w-12 absolute top-[-5%] left-0 md:left-[-30%]"
+                  className="w-12 md:w-auto absolute top-[-5%] left-0 md:left-[-30%]"
                   src="../img/dots.png"
                   alt=""
                 />
