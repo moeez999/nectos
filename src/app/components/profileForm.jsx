@@ -105,6 +105,16 @@ const ProfileForm = () => {
                 </button>
               </div>
             </div>
+            <div className="w-full md:mt-6">
+              <div className=" flex items-center justify-between px-4  py-3 outline-none">
+                <button className="text-[#1A2530] font-medium py-1">
+                  Delete
+                </button>
+                <button className="text-[#E60019] text-[10px] md:text-xs border border-[#E60019] rounded-[4px] p-1">
+                  Delete Account
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

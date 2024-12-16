@@ -165,7 +165,7 @@ export default function Settings() {
         </div>
 
         <div className="lg:pl-72">
-          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
+          <div className="sticky bg-white top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 px-4 sm:gap-x-6 sm:px-6 lg:px-8">
             <button
               type="button"
               onClick={() => setSidebarOpen(true)}
@@ -211,7 +211,7 @@ export default function Settings() {
             </button>
 
             <div className="flex flex-1 justify-center md:justify-between items-center gap-x-4 self-stretch lg:gap-x-6">
-              <h2 className="text-[#1B1E28] font-medium text-xl">Profile</h2>
+              <h2 className="text-[#1B1E28] font-medium text-xl">Setting</h2>
               <div className="flex items-center gap-x-4 lg:gap-x-6">
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative hidden md:block">
