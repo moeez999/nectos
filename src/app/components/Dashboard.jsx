@@ -17,6 +17,8 @@ import {
   UsersIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import ProfileCard from "./profileCard";
+import CreateCard from "./createCard";
 
 const navigation = [
   { name: "Profile", href: "/dashboard", icon: HomeIcon, current: true },
@@ -37,6 +39,7 @@ function classNames(...classes) {
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [createCard, setCreateCard] = useState(false);
 
   return (
     <>
@@ -235,43 +238,50 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <main className="py-10">
-            <div className="px-4 sm:px-6 lg:px-8 flex justify-center items-center h-full flex-col gap-8">
-              <h1 className="text-[#1B1E28] font-semibold md:text-2xl text-center">
-                Welcome to your <br /> Profile!
-              </h1>
-              <div className="relative flex justify-center items-center">
-                <img
-                  className="w-[90%] md:w-full"
-                  src="../img/welcome.png"
-                  alt=""
-                />
-                <img
-                  className="w-12 md:w-auto absolute bottom-[-20%] left-[-4%] md:bottom-[-5%] md:left-[-40%]"
-                  src="../img/arrowcurly.png"
-                  alt=""
-                />
-                <img
-                  className="w-12 md:w-auto absolute top-0 right-[-2%] md:right-[-30%]"
-                  src="../img/yellowmark.png"
-                  alt=""
-                />
-                <img
-                  className="w-12 md:w-auto absolute top-[-5%] left-0 md:left-[-30%]"
-                  src="../img/dots.png"
-                  alt=""
-                />
+          {createCard ? (
+            <main className="py-10 px-8 flex items-center flex-col-reverse md:flex-row gap-2">
+              <CreateCard />
+              <ProfileCard />
+            </main>
+          ) : (
+            <main className="py-10 ">
+              <div className="px-4 sm:px-6 lg:px-8 flex justify-center items-center h-full flex-col gap-8">
+                <h1 className="text-[#1B1E28] font-semibold md:text-2xl text-center">
+                  Welcome to your <br /> Profile!
+                </h1>
+                <div className="relative flex justify-center items-center">
+                  <img
+                    className="w-[90%] md:w-full"
+                    src="../img/welcome.png"
+                    alt=""
+                  />
+                  <img
+                    className="w-12 md:w-auto absolute bottom-[-20%] left-[-4%] md:bottom-[-5%] md:left-[-40%]"
+                    src="../img/arrowcurly.png"
+                    alt=""
+                  />
+                  <img
+                    className="w-12 md:w-auto absolute top-0 right-[-2%] md:right-[-30%]"
+                    src="../img/yellowmark.png"
+                    alt=""
+                  />
+                  <img
+                    className="w-12 md:w-auto absolute top-[-5%] left-0 md:left-[-30%]"
+                    src="../img/dots.png"
+                    alt=""
+                  />
+                </div>
               </div>
-            </div>
-            <div className="flex justify-center">
-              <a
-                href="#"
-                className="bg-[#053E42] text-white rounded-full md:rounded-[12px] px-8 py-3 mt-10"
-              >
-                Create a card
-              </a>
-            </div>
-          </main>
+              <div className="flex justify-center">
+                <button
+                  onClick={() => setCreateCard(true)}
+                  className="bg-[#053E42] text-white rounded-full md:rounded-[12px] px-8 py-3 mt-10"
+                >
+                  Create a card
+                </button>
+              </div>
+            </main>
+          )}
         </div>
       </div>
     </>

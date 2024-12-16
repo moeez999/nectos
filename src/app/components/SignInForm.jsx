@@ -61,7 +61,7 @@ export default function SignInForm() {
               {showPassword ? (
                 <img src="../img/eye.svg" alt="eye" />
               ) : (
-                <img src="../img/eye.svg" alt="eye" />
+                <img src="../img/view.svg" alt="eye" />
               )}
             </button>
           </div>
