@@ -1,10 +1,10 @@
 import React from "react";
-import Dashboard from "../components/Dashboard";
+import Support from "../components/support";
 
 export default function page() {
   return (
     <div>
-      <Dashboard />
+      <Support />
     </div>
   );
 }

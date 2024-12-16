@@ -7,13 +7,9 @@ import {
   DialogPanel,
   Menu,
   MenuButton,
-  MenuItem,
-  MenuItems,
   TransitionChild,
 } from "@headlessui/react";
 import {
-  Bars3Icon,
-  BellIcon,
   CalendarIcon,
   DocumentDuplicateIcon,
   FolderIcon,
@@ -22,29 +18,24 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-import {
-  ChevronDownIcon,
-  MagnifyingGlassIcon,
-} from "@heroicons/react/20/solid";
-
 const navigation = [
-  { name: "Profile", href: "#", icon: HomeIcon, current: true },
-  { name: "Anlytics", href: "#", icon: UsersIcon, current: false },
-  { name: "Setttings", href: "#", icon: FolderIcon, current: false },
-  { name: "Support", href: "#", icon: CalendarIcon, current: false },
-  { name: "Logout", href: "#", icon: DocumentDuplicateIcon, current: false },
-];
-
-const userNavigation = [
-  { name: "Your profile", href: "#" },
-  { name: "Sign out", href: "#" },
+  { name: "Profile", href: "/dashboard", icon: HomeIcon, current: true },
+  { name: "Analytics", href: "/analytics", icon: UsersIcon, current: false },
+  { name: "Setttings", href: "/settings", icon: FolderIcon, current: false },
+  { name: "Support", href: "/support", icon: CalendarIcon, current: false },
+  {
+    name: "Logout",
+    href: "/logout",
+    icon: DocumentDuplicateIcon,
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function SideBar() {
+export default function Support() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -177,7 +168,7 @@ export default function SideBar() {
             <button
               type="button"
               onClick={() => setSidebarOpen(true)}
-              className="-m-2.5 p-2.5 text-gray-700 lg:hidden bg-[#F7F7F9] rounded-[12px]"
+              className="-m-2.5 p-2.5 text-[#1B1E28] lg:hidden bg-[#F7F7F9] rounded-[12px]"
             >
               <span className="sr-only">Open sidebar</span>
               <svg
@@ -219,7 +210,7 @@ export default function SideBar() {
             </button>
 
             <div className="flex flex-1 justify-center md:justify-between items-center gap-x-4 self-stretch lg:gap-x-6">
-              <h2 className="text-[#1B1E28] font-medium text-xl">Profile</h2>
+              <h2 className="text-[#1B1E28] font-medium text-xl">Support</h2>
               <div className="flex items-center gap-x-4 lg:gap-x-6">
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative hidden md:block">
@@ -246,39 +237,52 @@ export default function SideBar() {
 
           <main className="py-10">
             <div className="px-4 sm:px-6 lg:px-8 flex justify-center items-center h-full flex-col gap-8">
-              <h1 className="text-[#1B1E28] font-semibold md:text-2xl text-center">
-                Welcome to your <br /> Profile!
-              </h1>
-              <div className="relative flex justify-center items-center">
+              <div>
                 <img
                   className="w-[90%] md:w-full"
-                  src="../img/welcome.png"
-                  alt=""
-                />
-                <img
-                  className="w-12 md:w-auto absolute bottom-[-20%] left-[-4%] md:bottom-[-5%] md:left-[-40%]"
-                  src="../img/arrowcurly.png"
-                  alt=""
-                />
-                <img
-                  className="w-12 md:w-auto absolute top-0 right-[-2%] md:right-[-30%]"
-                  src="../img/yellowmark.png"
-                  alt=""
-                />
-                <img
-                  className="w-12 md:w-auto absolute top-[-5%] left-0 md:left-[-30%]"
-                  src="../img/dots.png"
+                  src="../img/support.png"
                   alt=""
                 />
               </div>
+              <h1 className="text-[#1B1E28] font-semibold md:text-2xl text-center">
+                Hello, How Can We Help you?
+              </h1>
             </div>
-            <div className="flex justify-center">
-              <a
-                href="#"
-                className="bg-[#053E42] text-white rounded-full md:rounded-[12px] px-8 py-3 mt-10"
-              >
-                Create a card
-              </a>
+            <div className="flex justify-center gap-8">
+              <div className="max-w-sm  mt-8 p-4  rounded-lg bg-[#D2FAE9]">
+                <div className="flex items-center justify-between border-b border-[#D9D9D9] pb-4">
+                  <div className="flex items-center">
+                    <span className="inline-block ">
+                      <img src="../img/customersupport.svg" alt="" />
+                    </span>
+                    <h2 className="ml-4 text-lg  text-[#1B1E28]">
+                      Customer Support
+                    </h2>
+                  </div>
+                  <img src="../img/chevron-2.svg" alt="" />
+                </div>
+                <p className="mt-2 text-[#545454] text-sm pt-2">
+                  Lorem ipsum dolor sit amet consectetur. Nulla ultricies lacus
+                  gravida fermentum sit. Venenatis amet nunc placerat lacus et
+                  turpis eget. Velit.
+                </p>
+              </div>{" "}
+              <div className="max-w-sm  mt-8 p-4  rounded-lg bg-[#D2FAE9]">
+                <div className="flex items-center justify-between border-b border-[#D9D9D9] pb-4">
+                  <div className="flex items-center">
+                    <span className="inline-block ">
+                      <img src="../img/faq-2.svg" alt="" />
+                    </span>
+                    <h2 className="ml-4 text-lg  text-[#1B1E28]">FAQ’s</h2>
+                  </div>
+                  <img src="../img/chevron-2.svg" alt="" />
+                </div>
+                <p className="mt-2 text-[#545454] text-sm pt-2">
+                  Lorem ipsum dolor sit amet consectetur. Nulla ultricies lacus
+                  gravida fermentum sit. Venenatis amet nunc placerat lacus et
+                  turpis eget. Velit.
+                </p>
+              </div>
             </div>
           </main>
         </div>
