@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <Head>
         {/* Add your favicon link here */}
         <link rel="icon" href="./img/Nectos-Logo.svg" type="image/svg+xml" />
