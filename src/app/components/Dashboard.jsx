@@ -19,6 +19,7 @@ import {
 } from "@heroicons/react/24/outline";
 import ProfileCard from "./profileCard";
 import CreateCard from "./createCard";
+import ShareCard from "./shareCard";
 
 const navigation = [
   { name: "Profile", href: "/dashboard", icon: HomeIcon, current: true },
@@ -40,6 +41,11 @@ function classNames(...classes) {
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [createCard, setCreateCard] = useState(false);
+  const [showShareCard, setShowShareCard] = useState(false);
+
+  const handleShareCard = () => {
+    setShowShareCard((prev) => !prev);
+  };
 
   return (
     <>
@@ -239,9 +245,10 @@ export default function Dashboard() {
           </div>
 
           {createCard ? (
-            <main className="py-10 px-8 flex items-center flex-col-reverse md:flex-row gap-2">
+            <main className="py-10 px-8 flex items-center flex-col-reverse md:flex-row gap-2 relative">
               <CreateCard />
-              <ProfileCard />
+              <ProfileCard handleShareCard={handleShareCard} />
+              {showShareCard && <ShareCard />}
             </main>
           ) : (
             <main className="py-10 ">
