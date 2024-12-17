@@ -59,38 +59,38 @@ const ShareCard = () => {
                 <path
                   d="M14.1667 11.1666V13.6666C14.1667 16.9999 12.8334 18.3333 9.50002 18.3333H6.33335C3.00002 18.3333 1.66669 16.9999 1.66669 13.6666V10.4999C1.66669 7.16659 3.00002 5.83325 6.33335 5.83325H8.83335"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M14.1666 11.1666H11.5C9.49998 11.1666 8.83331 10.4999 8.83331 8.49992V5.83325L14.1666 11.1666Z"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M9.66669 1.66675H13"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M5.83331 4.16675C5.83331 2.78341 6.94998 1.66675 8.33331 1.66675H10.5166"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M18.3333 6.66675V11.8251C18.3333 13.1167 17.2833 14.1667 15.9916 14.1667"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M18.3333 6.66675H15.8333C13.9583 6.66675 13.3333 6.04175 13.3333 4.16675V1.66675L18.3333 6.66675Z"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>

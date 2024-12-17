@@ -21,7 +21,7 @@ import {
 import AudienceChart from "../components/audienceCart";
 import TrafficByDevice from "../components/trafficByDevice";
 import TotalVisitors from "../components/totalVisitors";
-import TrafficByLocationMap from "../components/TrafficByLocation";
+import TrafficByLocationMap from "../components/trafficByLocation";
 
 const navigation = [
   { name: "Profile", href: "/dashboard", icon: HomeIcon, current: true },
@@ -193,29 +193,29 @@ export default function Dashboard() {
                   d="M3 4.5H21"
                   stroke="#292D32"
                   strokeWidth="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M3 9.5H12.47"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M3 14.5H21"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M3 19.5H12.47"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
@@ -258,7 +258,7 @@ export default function Dashboard() {
                 <TrafficByDevice />
               </div>
               <div className="md:col-span-1">
-                {/* <TrafficByLocationMap /> */}
+                <TrafficByLocationMap />
               </div>
             </div>
           </main>

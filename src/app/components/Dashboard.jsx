@@ -22,14 +22,34 @@ import CreateCard from "./createCard";
 import ShareCard from "./shareCard";
 
 const navigation = [
-  { name: "Profile", href: "/dashboard", icon: HomeIcon, current: true },
-  { name: "Analytics", href: "/analytics", icon: UsersIcon, current: false },
-  { name: "Setttings", href: "/settings", icon: FolderIcon, current: false },
-  { name: "Support", href: "/support", icon: CalendarIcon, current: false },
+  {
+    name: "Profile",
+    href: "/dashboard",
+    icon: "../img/profileHome.svg",
+    current: true,
+  },
+  {
+    name: "Analytics",
+    href: "/analytics",
+    icon: "../img/analytics-2.svg",
+    current: false,
+  },
+  {
+    name: "Setttings",
+    href: "/settings",
+    icon: "../img/settings.svg",
+    current: false,
+  },
+  {
+    name: "Support",
+    href: "/support",
+    icon: "../img/support.svg",
+    current: false,
+  },
   {
     name: "Logout",
     href: "/logout",
-    icon: DocumentDuplicateIcon,
+    icon: "../img/logout.svg",
     current: false,
   },
 ];
@@ -104,7 +124,8 @@ export default function Dashboard() {
                                 "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
                               )}
                             >
-                              <item.icon
+                              <img src={item.icon} alt="" />
+                              {/* <item.icon
                                 aria-hidden="true"
                                 className={classNames(
                                   item.current
@@ -112,7 +133,7 @@ export default function Dashboard() {
                                     : "text-[#1B1E28] group-hover:text-white",
                                   "size-6 shrink-0"
                                 )}
-                              />
+                              /> */}
                               {item.name}
                             </a>
                           </li>
@@ -152,7 +173,8 @@ export default function Dashboard() {
                             "group flex gap-x-3 rounded-[10px] p-2 text-sm/6 font-semibold"
                           )}
                         >
-                          <item.icon
+                          <img src={item.icon} alt="" />
+                          {/* <item.icon
                             aria-hidden="true"
                             className={classNames(
                               item.current
@@ -160,7 +182,7 @@ export default function Dashboard() {
                                 : "text-[#1B1E28] group-hover:text-white",
                               "size-6 shrink-0"
                             )}
-                          />
+                          /> */}
                           {item.name}
                         </a>
                       </li>
@@ -190,30 +212,30 @@ export default function Dashboard() {
                 <path
                   d="M3 4.5H21"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M3 9.5H12.47"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M3 14.5H21"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M3 19.5H12.47"
                   stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
