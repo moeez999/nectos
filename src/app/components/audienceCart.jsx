@@ -34,7 +34,7 @@ const AudienceChart = () => {
         responsive: true,
         plugins: {
           legend: {
-            display: false, // Hide legend to avoid duplicating data
+            display: false,
           },
           tooltip: {
             callbacks: {
