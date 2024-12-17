@@ -247,17 +247,20 @@ export default function Dashboard() {
           </div>
 
           <main className="py-10 px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="md:col-span-2">
+            <div className="flex flex-wrap gap-4">
+              {/* First row (70% and 30%) */}
+              <div className="md:w-[65%]">
                 <TotalVisitors />
               </div>
-              <div className="md:col-span-1">
+              <div className="md:w-[30%]">
                 <AudienceChart />
               </div>
-              <div className="md:col-span-2">
+
+              {/* Second row (40% and 60%) */}
+              <div className="md:w-[45%]">
                 <TrafficByDevice />
               </div>
-              <div className="md:col-span-1">
+              <div className="md:w-[50%]">
                 <TrafficByLocationMap />
               </div>
             </div>
