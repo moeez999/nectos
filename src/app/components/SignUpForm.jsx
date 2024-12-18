@@ -21,12 +21,12 @@ export default function SignUpForm() {
         <div className="flex justify-center mb-6">
           <img src="../img/Nectos-Logo.svg" alt="Nectos" />
         </div>
-        <div className="mt-4 md:mt-16 flex flex-col gap-4">
+        <div className="mt-4  lg:mt-8 2xl:mt-16 flex flex-col xl:gap-2 2xl:gap-4">
           {/* Heading */}
           <h2 className="text-xl font-semibold text-[#1B1E28] md:text-center mb-2">
             Sign up now
           </h2>
-          <p className="text-sm text-[#7D848D] md:text-center mb-6">
+          <p className="text-sm text-[#7D848D] md:text-center xl:mt-3 2xl:mb-6">
             Please fill the details and create account
           </p>
 
@@ -76,7 +76,7 @@ export default function SignUpForm() {
               </span>
             </button>
           </div>
-          <p className="text-sm text-[#7D848D] mt-4 text-center">
+          <p className="text-sm text-[#7D848D] mt-1 2xl:mt-4 text-center">
             Already have an account?{" "}
             <a
               href="/signin"

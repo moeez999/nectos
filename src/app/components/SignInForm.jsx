@@ -83,7 +83,7 @@ export default function SignInForm() {
         </form>
 
         {/* Sign Up Link */}
-        <p className="text-sm text-[#7D848D] mt-4 text-center">
+        <p className="text-sm text-[#7D848D] mt-1 2xl:mt-4 text-center">
           Don't have an account?{" "}
           <a
             href="/signup"
