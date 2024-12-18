@@ -15,7 +15,7 @@ import AudienceChart from "../components/audienceCart";
 import TrafficByDevice from "../components/trafficByDevice";
 import TotalVisitors from "../components/totalVisitors";
 
-import TrafficByLocation from "../components/trafficByLocation";
+import TrafficByLocation from "../components/trafficByLocationMap";
 
 const navigation = [
   {
