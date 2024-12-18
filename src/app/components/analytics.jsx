@@ -14,7 +14,8 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import AudienceChart from "../components/audienceCart";
 import TrafficByDevice from "../components/trafficByDevice";
 import TotalVisitors from "../components/totalVisitors";
-import TrafficByLocationMap from "../components/trafficByLocation";
+
+import TrafficByLocation from "../components/trafficByLocation";
 
 const navigation = [
   {
@@ -253,7 +254,7 @@ export default function Analytics() {
                 <TrafficByDevice />
               </div>
               <div className="md:w-[50%]">
-                <TrafficByLocationMap />
+                <TrafficByLocation />
               </div>
             </div>
           </main>

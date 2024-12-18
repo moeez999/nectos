@@ -1,6 +1,6 @@
 import React from "react";
 
-import Dashboard from "../components/dashboard";
+import Dashboard from "../components/dashboard.jsx";
 
 export default function page() {
   return (
