@@ -45,7 +45,7 @@ const navigation = [
   },
   {
     name: "Logout",
-    href: "/logout",
+    href: "/signin",
     icon: "../img/logout.svg",
     current: false,
   },
