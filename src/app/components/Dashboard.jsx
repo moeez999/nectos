@@ -125,15 +125,7 @@ export default function Dashboard() {
                               )}
                             >
                               <img src={item.icon} alt="" />
-                              {/* <item.icon
-                                aria-hidden="true"
-                                className={classNames(
-                                  item.current
-                                    ? "text-white"
-                                    : "text-[#1B1E28] group-hover:text-white",
-                                  "size-6 shrink-0"
-                                )}
-                              /> */}
+
                               {item.name}
                             </a>
                           </li>

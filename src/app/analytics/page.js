@@ -24,14 +24,34 @@ import TotalVisitors from "../components/totalVisitors";
 import TrafficByLocationMap from "../components/trafficByLocation";
 
 const navigation = [
-  { name: "Profile", href: "/dashboard", icon: HomeIcon, current: true },
-  { name: "Analytics", href: "/analytics", icon: UsersIcon, current: false },
-  { name: "Setttings", href: "/settings", icon: FolderIcon, current: false },
-  { name: "Support", href: "/support", icon: CalendarIcon, current: false },
+  {
+    name: "Profile",
+    href: "/dashboard",
+    icon: "../img/profileHome.svg",
+    current: false,
+  },
+  {
+    name: "Analytics",
+    href: "/analytics",
+    icon: "../img/analytics-2.svg",
+    current: true,
+  },
+  {
+    name: "Setttings",
+    href: "/settings",
+    icon: "../img/settings.svg",
+    current: false,
+  },
+  {
+    name: "Support",
+    href: "/support",
+    icon: "../img/support.svg",
+    current: false,
+  },
   {
     name: "Logout",
     href: "/logout",
-    icon: DocumentDuplicateIcon,
+    icon: "../img/logout.svg",
     current: false,
   },
 ];
@@ -106,15 +126,8 @@ export default function Dashboard() {
                                 "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
                               )}
                             >
-                              <item.icon
-                                aria-hidden="true"
-                                className={classNames(
-                                  item.current
-                                    ? "text-white"
-                                    : "text-[#1B1E28] group-hover:text-white",
-                                  "size-6 shrink-0"
-                                )}
-                              />
+                              <img src={item.icon} alt="" />
+
                               {item.name}
                             </a>
                           </li>
@@ -154,15 +167,7 @@ export default function Dashboard() {
                             "group flex gap-x-3 rounded-[10px] p-2 text-sm/6 font-semibold"
                           )}
                         >
-                          <item.icon
-                            aria-hidden="true"
-                            className={classNames(
-                              item.current
-                                ? "text-white"
-                                : "text-[#1B1E28] group-hover:text-white",
-                              "size-6 shrink-0"
-                            )}
-                          />
+                          <img src={item.icon} alt="" />
                           {item.name}
                         </a>
                       </li>
