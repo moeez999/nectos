@@ -240,7 +240,7 @@ export default function Analytics() {
           </div>
 
           <main className="py-10 px-4">
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center items-center">
               {/* First row (70% and 30%) */}
               <div className="md:w-[65%]">
                 <TotalVisitors />

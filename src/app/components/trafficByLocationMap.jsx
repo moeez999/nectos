@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TrafficByLocation() {
   return (
-    <div className=" bg-[#FAFAFA] rounded-[16px] p-4 w-full">
+    <div className=" bg-[#FAFAFA] rounded-[16px] p-4 w-full h-[250px]">
       {/* Heading Above Chart */}
       <h1 className="text-xl font-bold text-[#1C1C1C] mb-4">
         Traffic by Location
