@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { act, useState } from "react";
 import {
   Dialog,
   DialogBackdrop,
@@ -14,12 +14,15 @@ import {
   DocumentDuplicateIcon,
   FolderIcon,
   HomeIcon,
+  PhotoIcon,
   UsersIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import ProfileCard from "./profileCard";
 import CreateCard from "./createCard";
 import ShareCard from "./shareCard";
+import DetailsForm from "./detailsForm";
+import PhotoLogoForm from "./photoLogo";
 
 const navigation = [
   {
@@ -48,7 +51,7 @@ const navigation = [
   },
   {
     name: "Logout",
-    href: "/logout",
+    href: "/signin",
     icon: "../img/logout.svg",
     current: false,
   },
@@ -62,9 +65,15 @@ export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [createCard, setCreateCard] = useState(false);
   const [showShareCard, setShowShareCard] = useState(false);
-
+  const [addCardDetails, setAddCardDetails] = useState(false);
+  const [activeTab, setActiveTab] = useState("details");
   const handleShareCard = () => {
     setShowShareCard((prev) => !prev);
+  };
+
+  const handleAddCardDetails = () => {
+    setAddCardDetails(true);
+    setCreateCard(false);
   };
 
   return (
@@ -166,15 +175,7 @@ export default function Dashboard() {
                           )}
                         >
                           <img src={item.icon} alt="" />
-                          {/* <item.icon
-                            aria-hidden="true"
-                            className={classNames(
-                              item.current
-                                ? "text-white"
-                                : "text-[#1B1E28] group-hover:text-white",
-                              "size-6 shrink-0"
-                            )}
-                          /> */}
+
                           {item.name}
                         </a>
                       </li>
@@ -260,11 +261,11 @@ export default function Dashboard() {
 
           {createCard ? (
             <main className="py-10 px-8 flex items-center flex-col-reverse md:flex-row gap-2 relative">
-              <CreateCard />
+              <CreateCard handleAddCardDetails={handleAddCardDetails} />
               <ProfileCard handleShareCard={handleShareCard} />
               {showShareCard && <ShareCard />}
             </main>
-          ) : (
+          ) : !addCardDetails && !createCard ? (
             <main className="py-10 ">
               <div className="px-4 sm:px-6 lg:px-8 flex justify-center items-center h-full flex-col gap-8">
                 <h1 className="text-[#1B1E28] font-semibold md:text-2xl text-center">
@@ -302,6 +303,53 @@ export default function Dashboard() {
                 </button>
               </div>
             </main>
+          ) : (
+            addCardDetails &&
+            !createCard && (
+              <div className="flex justify-center items-center w-full px-4 py-6 bg-[#FDF9F8]">
+                <div className="w-full max-w-[600px] bg-white p-6 rounded-xl shadow-lg">
+                  {/* Tabs */}
+                  <div className="flex gap-8 mb-6 border-b-2 border-gray-100">
+                    <button
+                      onClick={() => setActiveTab("details")}
+                      className={`pb-2 ${
+                        activeTab === "details"
+                          ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
+                          : "text-[#7D848D]"
+                      }`}
+                    >
+                      Details
+                    </button>
+                    <button
+                      onClick={() => setActiveTab("photo")}
+                      className={`pb-2 ${
+                        activeTab === "photo"
+                          ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
+                          : "text-[#7D848D]"
+                      }`}
+                    >
+                      Photo/Logo
+                    </button>
+                    <button
+                      onClick={() => setActiveTab("content")}
+                      className={`pb-2 ${
+                        activeTab === "content"
+                          ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
+                          : "text-[#7D848D]"
+                      }`}
+                    >
+                      Content
+                    </button>
+                  </div>
+
+                  <div>
+                    {activeTab === "details" && <DetailsForm />}
+                    {activeTab === "photo" && <PhotoLogoForm />}
+                    {/* {activeTab === "content" && <ContentForm />} */}
+                  </div>
+                </div>
+              </div>
+            )
           )}
         </div>
       </div>
