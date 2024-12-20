@@ -2,7 +2,7 @@ const CreateCard = ({ handleAddCardDetails }) => {
   return (
     <div className="rounded-[28px]  bg-[#EFFAF5] p-5 flex flex-col items-center justify-center h-48 w-80">
       <div
-        className="bg-[#1DD588] bg-opacity-40 rounded-full p-4"
+        className="bg-[#1DD588] bg-opacity-40 rounded-full p-4 cursor-pointer"
         onClick={handleAddCardDetails}
       >
         <svg
