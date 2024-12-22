@@ -308,53 +308,54 @@ export default function Dashboard() {
           ) : (
             addCardDetails &&
             !createCard && (
-              <div className="flex justify-center gap-8  w-full px-4 py-6 bg-[#F3FFFA] rounded-xl">
-                <div className="w-full max-w-[600px]">
-                  {/* Tabs */}
-                  <div className="flex gap-8 mb-6 border-b-2 border-gray-100">
-                    <button
-                      onClick={() => setActiveTab("details")}
-                      className={`pb-2 ${
-                        activeTab === "details"
-                          ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
-                          : "text-[#7D848D]"
-                      }`}
-                    >
-                      Details
-                    </button>
-                    <button
-                      onClick={() => setActiveTab("photo")}
-                      className={`pb-2 ${
-                        activeTab === "photo"
-                          ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
-                          : "text-[#7D848D]"
-                      }`}
-                    >
-                      Photo/Logo
-                    </button>
-                    <button
-                      onClick={() => setActiveTab("content")}
-                      className={`pb-2 ${
-                        activeTab === "content"
-                          ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
-                          : "text-[#7D848D]"
-                      }`}
-                    >
-                      Content
-                    </button>
+              <div className="p-4">
+                <div className="flex justify-center gap-8  w-full  rounded-xl px-4 py-6 bg-[#F3FFFA]">
+                  <div className="w-full max-w-[600px] ">
+                    {/* Tabs */}
+                    <div className="flex gap-8 mb-6 border-b-2 border-gray-100">
+                      <button
+                        onClick={() => setActiveTab("details")}
+                        className={`pb-2 ${
+                          activeTab === "details"
+                            ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
+                            : "text-[#7D848D]"
+                        }`}
+                      >
+                        Details
+                      </button>
+                      <button
+                        onClick={() => setActiveTab("photo")}
+                        className={`pb-2 ${
+                          activeTab === "photo"
+                            ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
+                            : "text-[#7D848D]"
+                        }`}
+                      >
+                        Photo/Logo
+                      </button>
+                      <button
+                        onClick={() => setActiveTab("content")}
+                        className={`pb-2 ${
+                          activeTab === "content"
+                            ? "text-[#053E42] font-semibold border-b-2 border-[#053E42]"
+                            : "text-[#7D848D]"
+                        }`}
+                      >
+                        Content
+                      </button>
+                    </div>
+                    <div>
+                      {activeTab === "details" && <DetailsForm />}
+                      {activeTab === "photo" && <PhotoLogoForm />}
+                      {activeTab === "content" && <ContentForm />}
+                    </div>
                   </div>
-
-                  <div>
-                    {activeTab === "details" && <DetailsForm />}
-                    {activeTab === "photo" && <PhotoLogoForm />}
-                    {activeTab === "content" && <ContentForm />}
+                  <div className="sm:block hidden">
+                    <p className="text-sm text-[#7D848D] mb-4 text-center">
+                      Live Preview
+                    </p>
+                    <LiveCard />
                   </div>
-                </div>
-                <div className="sm:block hidden">
-                  <p className="text-sm text-[#7D848D] mb-4 text-center">
-                    Live Preview
-                  </p>
-                  <LiveCard />
                 </div>
               </div>
             )
