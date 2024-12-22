@@ -74,7 +74,7 @@ const ContentForm = () => {
     <div className="w-[600px] flex flex-col items-center justify-center space-y-4">
       {socialProfiles.map((profile, index) => (
         <div key={index} className="flex items-center space-x-2 w-full">
-          <div className="flex items-center justify-center w-6 h-6 rounded-full">
+          <div className="flex items-center justify-center rounded-full">
             <img
               src={profile.iconSrc}
               alt={`${profile.username} icon`}

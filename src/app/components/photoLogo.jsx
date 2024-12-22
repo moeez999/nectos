@@ -20,65 +20,66 @@ export default function PhotoLogoForm() {
 
   return (
     <div className="flex justify-center items-center w-full px-4 py-6 ">
-      <div className="w-full max-w-[600px]  p-6 rounded-xl ">
+      <div className="w-full max-w-[600px]  px-6 py-2 rounded-xl ">
         {/* Photo Upload Sections */}
         <div className="space-y-6">
           {/* Photo Picture */}
-          <div className="flex items-center justify-between">
-            <div>
-              <h3 className="text-md font-semibold text-[#1B1E28]">
-                Photo Picture
-              </h3>
-              <p className="text-sm text-gray-500">Size : 480 px X 480 px</p>
-            </div>
-            <label className="relative cursor-pointer">
-              {photoPicture ? (
-                <img
-                  src={photoPicture}
-                  alt="Photo Picture"
-                  className="w-16 h-16 rounded-full object-cover"
+          <div className="flex gap-4 items-center justify-between">
+            <div className="flex justify-between flex-col items-end gap-4">
+              <div>
+                <h3 className="text-md font-semibold text-[#1B1E28]">
+                  Photo Picture
+                </h3>
+                <p className="text-sm text-gray-500">Size : 480 px X 480 px</p>
+              </div>
+              <label className="relative cursor-pointer">
+                {photoPicture ? (
+                  <img
+                    src={photoPicture}
+                    alt="Photo Picture"
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
+                    <span>+</span>
+                  </div>
+                )}
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleImageChange(e, setPhotoPicture)}
+                  className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
                 />
-              ) : (
-                <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                  <span>+</span>
-                </div>
-              )}
-              <input
-                type="file"
-                accept="image/*"
-                onChange={(e) => handleImageChange(e, setPhotoPicture)}
-                className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
-              />
-            </label>
-          </div>
-
-          {/* Brand Logo */}
-          <div className="flex items-center justify-between">
-            <div>
-              <h3 className="text-md font-semibold text-[#1B1E28]">
-                Brand Logo
-              </h3>
-              <p className="text-sm text-gray-500">Size : 240 px X 240 px</p>
+              </label>
             </div>
-            <label className="relative cursor-pointer">
-              {brandLogo ? (
-                <img
-                  src={brandLogo}
-                  alt="Brand Logo"
-                  className="w-16 h-16 rounded-full object-cover"
+            {/* Brand Logo */}
+            <div className="flex justify-between flex-col items-end gap-4">
+              <div>
+                <h3 className="text-md font-semibold text-[#1B1E28]">
+                  Brand Logo
+                </h3>
+                <p className="text-sm text-gray-500">Size : 240 px X 240 px</p>
+              </div>
+              <label className="relative cursor-pointer">
+                {brandLogo ? (
+                  <img
+                    src={brandLogo}
+                    alt="Brand Logo"
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
+                    <span>+</span>
+                  </div>
+                )}
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleImageChange(e, setBrandLogo)}
+                  className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
                 />
-              ) : (
-                <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                  <span>+</span>
-                </div>
-              )}
-              <input
-                type="file"
-                accept="image/*"
-                onChange={(e) => handleImageChange(e, setBrandLogo)}
-                className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
-              />
-            </label>
+              </label>
+            </div>
           </div>
 
           {/* Cover Picture */}
