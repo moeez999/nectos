@@ -25,4 +25,13 @@ body {
   .hero-section {
     background-image: url("../../public/img/hero-two.png");
   }
+
+  .canvas-width {
+    width: 300px !important;
+  }
+
+  .canvas-width-chart {
+    width: 300px !important;
+    height: 300px !important;
+  }
 }

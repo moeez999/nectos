@@ -184,7 +184,10 @@ const TotalVisitors = () => {
 
           {isClient && (
             <div className="flex justify-center">
-              <canvas ref={chartRef} className="w-[500px] h-[400px]"></canvas>
+              <canvas
+                ref={chartRef}
+                className="w-[500px] h-[400px] canvas-width"
+              ></canvas>
             </div>
           )}
         </div>

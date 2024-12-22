@@ -62,7 +62,10 @@ const AudienceChart = () => {
 
       {/* Chart */}
       <div className="flex justify-center">
-        <canvas ref={chartRef} className="w-[278px] h-[278px] ad-ca"></canvas>
+        <canvas
+          ref={chartRef}
+          className="w-[278px] h-[278px]  canvas-width-chart"
+        ></canvas>
       </div>
 
       {/* Percentages Below Chart */}

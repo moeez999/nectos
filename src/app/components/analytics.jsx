@@ -240,7 +240,7 @@ export default function Analytics() {
           </div>
 
           <main className="py-10 px-4">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 pb-4">
               <div className="bg-[#FFE8D2] px-4 py-6 rounded-xl sm:text-start text-center w-[160px] sm:w-full flex flex-col sm:flex-col-reverse">
                 <div className="flex justify-between items-center">
                   <p className="text-xl font-bold text-[#1B1E28]">50K</p>
