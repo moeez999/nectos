@@ -23,6 +23,6 @@ body {
 
 @media (max-width: 641px) {
   .hero-section {
-    background-color: #c4f4e0;
+    background-image: url("../../public/img/hero-two.png");
   }
 }

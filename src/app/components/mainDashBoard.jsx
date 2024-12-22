@@ -23,6 +23,8 @@ import CreateCard from "./createCard";
 import ShareCard from "./shareCard";
 import DetailsForm from "./detailsForm";
 import PhotoLogoForm from "./photoLogo";
+import LiveCard from "./liveCard";
+import ContentForm from "./contentForm";
 
 const navigation = [
   {
@@ -306,8 +308,8 @@ export default function Dashboard() {
           ) : (
             addCardDetails &&
             !createCard && (
-              <div className="flex justify-center items-center w-full px-4 py-6 bg-[#FDF9F8]">
-                <div className="w-full max-w-[600px] bg-white p-6 rounded-xl shadow-lg">
+              <div className="flex justify-center gap-8  w-full px-4 py-6 bg-[#F3FFFA] rounded-xl">
+                <div className="w-full max-w-[600px]">
                   {/* Tabs */}
                   <div className="flex gap-8 mb-6 border-b-2 border-gray-100">
                     <button
@@ -345,8 +347,14 @@ export default function Dashboard() {
                   <div>
                     {activeTab === "details" && <DetailsForm />}
                     {activeTab === "photo" && <PhotoLogoForm />}
-                    {/* {activeTab === "content" && <ContentForm />} */}
+                    {activeTab === "content" && <ContentForm />}
                   </div>
+                </div>
+                <div className="sm:block hidden">
+                  <p className="text-sm text-[#7D848D] mb-4 text-center">
+                    Live Preview
+                  </p>
+                  <LiveCard />
                 </div>
               </div>
             )

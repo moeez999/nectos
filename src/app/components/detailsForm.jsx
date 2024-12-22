@@ -29,6 +29,10 @@ export default function DetailsForm() {
     <form onSubmit={handleSubmit} className="space-y-5">
       {/* Basic Details */}
       <h3 className="text-lg font-semibold text-[#1B1E28]">Basic Details</h3>
+      <p className="text-sm text-[#7D848D]">
+        Lorem ipsum dolor sit amet consectetur. Molestie pellentesque a augue
+        tellus id massa arcu.
+      </p>
       <div className="space-y-3">
         <div>
           <label
@@ -99,6 +103,10 @@ export default function DetailsForm() {
 
       {/* Contact Details */}
       <h3 className="text-lg font-semibold text-[#1B1E28]">Contact Details</h3>
+      <p className="text-sm text-[#7D848D]">
+        Lorem ipsum dolor sit amet consectetur. Molestie pellentesque a augue
+        tellus id massa arcu.
+      </p>
       <div className="space-y-3">
         <div>
           <label
