@@ -240,6 +240,102 @@ export default function Analytics() {
           </div>
 
           <main className="py-10 px-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+              <div className="bg-[#FFE8D2] px-4 py-6 rounded-xl sm:text-start text-center w-[160px] sm:w-full flex flex-col sm:flex-col-reverse">
+                <div className="flex justify-between items-center">
+                  <p className="text-xl font-bold text-[#1B1E28]">50K</p>
+                  <p className="text-sm hidden sm:flex items-center gap-1">
+                    +20.1%{" "}
+                    <svg
+                      width="13"
+                      height="8"
+                      viewBox="0 0 13 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.45488 1.60777L13 0L11.6198 5.6061L9.89804 3.9532L7.12069 6.84627C7.02641 6.94448 6.89615 7 6.76 7C6.62385 7 6.49359 6.94448 6.39931 6.84627L4.36 4.72199L1.36069 7.84627C1.16946 8.04547 0.85294 8.05193 0.653735 7.86069C0.454529 7.66946 0.44807 7.35294 0.639307 7.15373L3.99931 3.65373C4.09359 3.55552 4.22385 3.5 4.36 3.5C4.49615 3.5 4.62641 3.55552 4.72069 3.65373L6.76 5.77801L9.17665 3.26067L7.45488 1.60777Z"
+                        fill="#1C1C1C"
+                      />
+                    </svg>
+                  </p>
+                </div>
+
+                <p className="text-[#272727] text-sm">New Visitors</p>
+              </div>
+              <div className="bg-[#FFECE6] px-4 py-6 rounded-xl sm:text-start text-center w-[160px] sm:w-full flex flex-col  sm:flex-col-reverse">
+                <div className="flex justify-between items-center">
+                  <p className="text-xl font-bold text-[#1B1E28]">50K</p>
+                  <p className="text-sm hidden sm:flex items-center gap-1">
+                    +20.1%{" "}
+                    <svg
+                      width="13"
+                      height="8"
+                      viewBox="0 0 13 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.54512 6.39223L-9.53674e-07 8L1.38019 2.3939L3.10196 4.0468L5.87931 1.15373C5.97359 1.05552 6.10385 1 6.24 1C6.37615 1 6.50641 1.05552 6.60069 1.15373L8.64 3.27801L11.6393 0.153734C11.8305 -0.0454712 12.1471 -0.0519314 12.3463 0.139307C12.5455 0.330544 12.5519 0.64706 12.3607 0.846266L9.00069 4.34627C8.90641 4.44448 8.77615 4.5 8.64 4.5C8.50385 4.5 8.37359 4.44448 8.27931 4.34627L6.24 2.22199L3.82335 4.73933L5.54512 6.39223Z"
+                        fill="#1C1C1C"
+                      />
+                    </svg>
+                  </p>
+                </div>
+                <p className="text-[#272727] text-sm">Total Visitors</p>
+              </div>
+              <div className="bg-[#C5DFE5] px-4 py-6 rounded-xl sm:text-start text-center w-[160px] sm:w-full flex flex-col  sm:flex-col-reverse">
+                <div className="flex justify-between items-center">
+                  <p className="text-xl font-bold text-[#1B1E28]">50K</p>
+                  <p className="text-sm hidden sm:flex items-center gap-1">
+                    +20.1%
+                    <svg
+                      width="13"
+                      height="8"
+                      viewBox="0 0 13 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.54512 6.39223L-9.53674e-07 8L1.38019 2.3939L3.10196 4.0468L5.87931 1.15373C5.97359 1.05552 6.10385 1 6.24 1C6.37615 1 6.50641 1.05552 6.60069 1.15373L8.64 3.27801L11.6393 0.153734C11.8305 -0.0454712 12.1471 -0.0519314 12.3463 0.139307C12.5455 0.330544 12.5519 0.64706 12.3607 0.846266L9.00069 4.34627C8.90641 4.44448 8.77615 4.5 8.64 4.5C8.50385 4.5 8.37359 4.44448 8.27931 4.34627L6.24 2.22199L3.82335 4.73933L5.54512 6.39223Z"
+                        fill="#1C1C1C"
+                      />
+                    </svg>
+                  </p>
+                </div>
+
+                <p className="text-[#272727] text-sm">New Users</p>
+              </div>
+              <div className="bg-[#D2F1DB] px-4 py-6 rounded-xl sm:text-start text-center w-[160px] sm:w-full flex flex-col  sm:flex-col-reverse">
+                <div className="flex justify-between items-center">
+                  <p className="text-xl font-bold text-[#1B1E28]">50K</p>
+                  <p className="text-sm hidden sm:flex items-center gap-1">
+                    +20.1%{" "}
+                    <svg
+                      width="13"
+                      height="8"
+                      viewBox="0 0 13 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.45488 1.60777L13 0L11.6198 5.6061L9.89804 3.9532L7.12069 6.84627C7.02641 6.94448 6.89615 7 6.76 7C6.62385 7 6.49359 6.94448 6.39931 6.84627L4.36 4.72199L1.36069 7.84627C1.16946 8.04547 0.85294 8.05193 0.653735 7.86069C0.454529 7.66946 0.44807 7.35294 0.639307 7.15373L3.99931 3.65373C4.09359 3.55552 4.22385 3.5 4.36 3.5C4.49615 3.5 4.62641 3.55552 4.72069 3.65373L6.76 5.77801L9.17665 3.26067L7.45488 1.60777Z"
+                        fill="#1C1C1C"
+                      />
+                    </svg>
+                  </p>
+                </div>
+                <p className="text-[#272727] text-sm">Page Views</p>
+              </div>
+            </div>
             <div className="flex flex-wrap gap-4 justify-center items-center">
               {/* First row (70% and 30%) */}
               <div className="md:w-[65%]">
