@@ -88,6 +88,13 @@ const ContentForm = () => {
           />
         </div>
       ))}
+      {/* Submit Button */}
+      <button
+        type="submit"
+        className="mt-6 w-full p-3 bg-[#053E42] text-white rounded-lg hover:bg-white hover:text-[#053E42] border border-[#053E42] transition"
+      >
+        Continue
+      </button>
     </div>
   );
 };
