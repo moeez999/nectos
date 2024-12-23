@@ -2,9 +2,9 @@ import { useState } from "react";
 
 const ProfileForm = () => {
   const [profileImage, setProfileImage] = useState("../img/profileimg-2.png");
-  const [username, setUsername] = useState("Smith012");
-  const [email, setEmail] = useState("smith012@gmail.com");
-  const [password, setPassword] = useState("********");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -59,6 +59,7 @@ const ProfileForm = () => {
                 User Name
               </label>
               <input
+                placeholder="Username"
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
@@ -72,6 +73,7 @@ const ProfileForm = () => {
               </label>
               <div className="bg-[#D2FAE9] flex items-center justify-between rounded-[12px] px-4  py-3 outline-none">
                 <input
+                  placeholder="Email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -89,6 +91,7 @@ const ProfileForm = () => {
               </label>
               <div className="bg-[#D2FAE9] flex items-center justify-between rounded-[12px] px-4  py-3 outline-none">
                 <input
+                  placeholder="Password"
                   type="password"
                   value={email}
                   onChange={(e) => setPassword(e.target.value)}
