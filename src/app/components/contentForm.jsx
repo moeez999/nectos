@@ -2,7 +2,7 @@ const ContentForm = () => {
   const socialProfiles = [
     {
       username: "@Username",
-      iconSrc: "../icons/facebook.svg",
+      iconSrc: "../icons/Facebook.svg",
     },
     {
       username: "@Username",
@@ -10,27 +10,27 @@ const ContentForm = () => {
     },
     {
       username: "@Username",
-      iconSrc: "/icons/twitter.svg",
+      iconSrc: "/icons/Twitter.svg",
     },
     {
       username: "@Username",
-      iconSrc: "/icons/instagram.svg",
+      iconSrc: "/icons/Instagram.svg",
     },
     {
       username: "@Username",
-      iconSrc: "/icons/pinterest.svg",
+      iconSrc: "/icons/Pinterest.svg",
     },
     {
       username: "@Username",
-      iconSrc: "/icons/behance.svg",
+      iconSrc: "/icons/Behance.svg",
     },
     {
       username: "@Username",
-      iconSrc: "/icons/dribbble.svg",
+      iconSrc: "/icons/Dribbble.svg",
     },
     {
       username: "@Username",
-      iconSrc: "/icons/discord.svg",
+      iconSrc: "/icons/Discord.svg",
     },
     {
       username: "@Username",
@@ -38,31 +38,31 @@ const ContentForm = () => {
     },
     {
       username: "@Username",
-      iconSrc: "/icons/line.svg",
+      iconSrc: "/icons/Line.svg",
     },
     {
       username: "@Username",
-      iconSrc: "/icons/skype.svg",
+      iconSrc: "/icons/Skype.svg",
     },
     {
       username: "@Username",
-      iconSrc: "/icons/snapchat.svg",
+      iconSrc: "/icons/Snapchat.svg",
     },
     {
       username: "@Username",
-      iconSrc: "/icons/spotify.svg",
+      iconSrc: "/icons/Spotify.svg",
     },
     {
       username: "@Username",
-      iconSrc: "../icons/viber.svg",
+      iconSrc: "../icons/Viber.svg",
     },
     {
       username: "@Username",
-      iconSrc: "../icons/wechat.svg",
+      iconSrc: "../icons/Wechat.svg",
     },
     {
       username: "@Username",
-      iconSrc: "../icons/youtube.svg",
+      iconSrc: "../icons/Youtube.svg",
     },
     {
       username: "@Username",
