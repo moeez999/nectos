@@ -20,19 +20,19 @@ export default function PhotoLogoForm() {
 
   return (
     <div className="flex justify-center items-center w-full px-4 py-6 ">
-      <div className="w-full max-w-[600px]  px-6 py-2 rounded-xl ">
+      <div className="w-full max-w-[600px]  sm:px-6 py-2 rounded-xl ">
         {/* Photo Upload Sections */}
         <div className="space-y-6">
           {/* Photo Picture */}
-          <div className="flex gap-4 items-center justify-between">
-            <div className="flex justify-between flex-col items-end gap-4">
+          <div className="flex gap-4 flex-col sm:flex-row items-start justify-between">
+            <div className="flex justify-between flex-col sm:items-end gap-4 w-full">
               <div>
                 <h3 className="text-md font-semibold text-[#1B1E28]">
                   Photo Picture
                 </h3>
                 <p className="text-sm text-gray-500">Size : 480 px X 480 px</p>
               </div>
-              <label className="relative cursor-pointer">
+              <label className="relative cursor-pointer flex justify-end sm:block">
                 {photoPicture ? (
                   <img
                     src={photoPicture}
@@ -53,14 +53,14 @@ export default function PhotoLogoForm() {
               </label>
             </div>
             {/* Brand Logo */}
-            <div className="flex justify-between flex-col items-end gap-4">
+            <div className="flex justify-between flex-col sm:items-end gap-4 w-full">
               <div>
                 <h3 className="text-md font-semibold text-[#1B1E28]">
                   Brand Logo
                 </h3>
                 <p className="text-sm text-gray-500">Size : 240 px X 240 px</p>
               </div>
-              <label className="relative cursor-pointer">
+              <label className="relative cursor-pointer flex justify-end sm:block">
                 {brandLogo ? (
                   <img
                     src={brandLogo}
