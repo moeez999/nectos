@@ -96,8 +96,12 @@ export default function PhotoLogoForm() {
                   className="w-full h-[180px] rounded-lg object-cover"
                 />
               ) : (
-                <div className="w-full h-[180px] rounded-lg bg-gray-200 flex items-center justify-center">
-                  <span className="text-lg">+</span>
+                <div className="w-full rounded-lg flex items-center justify-center">
+                  <img
+                    className="rounded-lg"
+                    src="../img/live-bg.png"
+                    alt="Profile"
+                  />
                 </div>
               )}
               <input
