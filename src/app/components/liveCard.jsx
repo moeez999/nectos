@@ -1,14 +1,14 @@
 import React from "react";
-// import {
-//   FaPhone,
-//   FaWhatsapp,
-//   FaEnvelope,
-//   FaGlobe,
-//   FaFacebook,
-//   FaTwitter,
-//   FaInstagram,
-//   FaYoutube,
-// } from "react-icons/fa";
+import {
+  FaPhone,
+  FaWhatsapp,
+  FaEnvelope,
+  FaGlobe,
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 const LiveCard = () => {
   return (
@@ -34,7 +34,7 @@ const LiveCard = () => {
         </div>
       </div>
 
-      <div className="rounded-t-2xl">
+      <div className="rounded-2xl">
         <div className="text-center mt-12 ">
           <h1 className="text-lg font-bold">James Parker</h1>
           <p className="text-[#515151] mt-1 font-medium text-xs">
@@ -64,42 +64,58 @@ const LiveCard = () => {
           <label htmlFor="" className="text-xs text-[#7D848D]">
             Phone Number
           </label>
-          <div className=" flex items-center gap-2  border-b border-gray-200 pb-2">
-            {/* <FaPhone className="text-green-700" /> */}
+          <div className=" flex items-center gap-2 justify-between  border-b border-gray-200 pb-2">
             <p className="text-sm text-[#1b1b1b]">(438) 439-3936 x7365</p>
+            <div className="bg-[#C4F4E0] rounded-full p-2">
+              <FaPhone className="text-[#1b1b1b]" />
+            </div>
           </div>
           <label htmlFor="" className="text-xs text-[#7D848D]">
             WhatApp Number
           </label>
-          <div className="m flex items-center gap-2  border-b border-gray-200 pb-2">
-            {/* <FaWhatsapp className="text-green-700" /> */}
+          <div className="m flex items-center gap-2 justify-between  border-b border-gray-200 pb-2">
             <p className="text-sm text-[#1b1b1b]">wa.me/message/S3P4JTD</p>
+            <div className="bg-[#C4F4E0] rounded-full p-2">
+              <FaWhatsapp className="text-[#1b1b1b]" />
+            </div>
           </div>
           <label htmlFor="" className="text-xs text-[#7D848D]">
             Email Address
           </label>
-          <div className="mt-2 flex items-center gap-2  border-b border-gray-200 pb-2">
-            {/* <FaEnvelope className="text-green-700" /> */}
+          <div className="mt-2 flex items-center gap-2 justify-between border-b border-gray-200 pb-2">
             <p className="text-sm text-[#1b1b1b]">Darrel78@hotmail.com</p>
+            <div className="bg-[#C4F4E0] rounded-full p-2">
+              <FaEnvelope className="text-[#1b1b1b]" />
+            </div>
           </div>
           <label htmlFor="" className="text-xs text-[#7D848D]">
             Website
           </label>
-          <div className="mt-2 flex items-center gap-2">
-            {/* <FaGlobe className="text-green-700" /> */}
+          <div className="mt-2 flex items-center gap-2 justify-between">
             <p className="text-sm text-[#1b1b1b]"> https://www.nectos.co</p>
+            <div className="bg-[#C4F4E0] rounded-full p-2">
+              <FaGlobe className="text-[#1b1b1b]" />
+            </div>
           </div>
         </div>
         <div className="mt-8 px-4">
           <h2 className="text-gray-700 font-semibold">Social Media</h2>
-          <div className="flex justify-around mt-4 text-green-700">
-            {/* <FaFacebook />
+          <div className="flex justify-start mt-4 text-white gap-2">
+            <div className="bg-[#1DD588] rounded-full p-2">
+              <FaFacebook />
+            </div>
+            <div className="bg-[#1DD588] rounded-full p-2">
               <FaTwitter />
+            </div>
+            <div className="bg-[#1DD588] rounded-full p-2">
               <FaInstagram />
-              <FaYoutube /> */}
+            </div>
+            <div className="bg-[#1DD588] rounded-full p-2">
+              <FaYoutube />
+            </div>
           </div>
         </div>
-        <div className="mt-8  text-center py-4">
+        <div className="mt-8  text-center py-4 rounded-b-2xl">
           <p className="text-xs text-[#7D848D]">
             Create a free online business <br /> card from
             <a href="https://nectos.co" className="text-[#1DD588] underline">
