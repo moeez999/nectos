@@ -32,7 +32,7 @@ export default function PhotoLogoForm() {
                 </h3>
                 <p className="text-sm text-gray-500">Size : 480 px X 480 px</p>
               </div>
-              <label className="relative cursor-pointer flex justify-end sm:block">
+              <label className="relative cursor-pointer flex justify-center sm:block">
                 {photoPicture ? (
                   <img
                     src={photoPicture}
@@ -40,8 +40,8 @@ export default function PhotoLogoForm() {
                     className="w-16 h-16 rounded-full object-cover"
                   />
                 ) : (
-                  <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                    <span>+</span>
+                  <div className="w-20 h-20  flex items-center justify-center">
+                    <img src="../img/upload.png" alt="Profile" />
                   </div>
                 )}
                 <input
@@ -60,7 +60,7 @@ export default function PhotoLogoForm() {
                 </h3>
                 <p className="text-sm text-gray-500">Size : 240 px X 240 px</p>
               </div>
-              <label className="relative cursor-pointer flex justify-end sm:block">
+              <label className="relative cursor-pointer flex justify-center sm:block">
                 {brandLogo ? (
                   <img
                     src={brandLogo}
@@ -68,8 +68,8 @@ export default function PhotoLogoForm() {
                     className="w-16 h-16 rounded-full object-cover"
                   />
                 ) : (
-                  <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
-                    <span>+</span>
+                  <div className="w-20 h-20 flex items-center justify-center">
+                    <img src="../img/upload-2.png" alt="Profile" />
                   </div>
                 )}
                 <input
