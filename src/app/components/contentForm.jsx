@@ -84,7 +84,7 @@ const ContentForm = () => {
           <input
             type="text"
             placeholder={profile.username}
-            className=" sm:w-[75%]  bg-[#C4F4E0] p-3 rounded-[3rem] text-[#727272] outline-none px-4"
+            className="w-full sm:w-[75%]  bg-[#C4F4E0] p-3 rounded-[3rem] text-[#727272] outline-none px-4"
           />
         </div>
       ))}
