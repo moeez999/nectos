@@ -9,7 +9,7 @@ body {
 }
 @media (min-width: 641px) {
   .hero-section {
-    background-image: url("../../public/img/hero.png");
+    background-image: url("../../public/img/heros.png");
     background-size: cover;
     background-position: center;
   }
