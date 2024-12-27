@@ -3,9 +3,12 @@ import Navbar from "./navbar";
 
 export default function HeroSection() {
   return (
-    <div id="hero" className="hero-section">
+    <div id="hero" className="hero-section relative">
       <div className="pt-4">
         <Navbar />
+      </div>
+      <div className="absolute top-24 left-1/2 transform -translate-x-1/2 z-10">
+        <img src="../img/hero-arrow.png" alt="" />
       </div>
       <div className="mx-auto max-w-7xl px-4 sm:px-6  md:flex md:items-center md:gap-x-10 md:px-8 relative">
         <div className="mx-auto max-w-2xl md:mx-0 md:flex-auto">

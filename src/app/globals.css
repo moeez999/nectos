@@ -10,9 +10,9 @@ body {
 @media (min-width: 641px) {
   .hero-section {
     background-image: url("/img/heros.png");
-
+    background-size: cover;
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
   }
 }
 .create-business-card-section {
