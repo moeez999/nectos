@@ -9,13 +9,14 @@ body {
 }
 @media (min-width: 641px) {
   .hero-section {
-    background-image: url("../../public/img/heros.png");
-    background-size: cover;
+    background-image: url("/img/heros.png");
+
     background-position: center;
+    background-repeat: no-repeat;
   }
 }
 .create-business-card-section {
-  background-image: url("../../public/img/bg-two.png");
+  background-image: url("/img/bg-two.png");
   background-size: cover;
   background-position: center;
   background-position: 10%;
@@ -23,7 +24,9 @@ body {
 
 @media (max-width: 641px) {
   .hero-section {
-    background-image: url("../../public/img/hero-two.png");
+    background-image: url("/img/hero-two.png");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .canvas-width {
